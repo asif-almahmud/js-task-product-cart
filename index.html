@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Products and Cart</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="product-view-container">
+            <div class="search-container">
+                <input placeholder="Search products ..." class="search-input-field"/>
+            </div>
+            <div class="products-container"></div>
+            <div class="options-container">
+                <h4>Dhanmondi | Register 1 | New Sale</h4>
+                <div >
+                    <button>
+                        Options
+                    </button>
+                    <button>
+                        New Sale
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div  class="cart-view-container">
+            <div class="add-customer">
+                <i class="fa fa-user"></i> Add Customer
+            </div>
+            <div class="cart-list-container">
+                <div class="cart-list-item">
+                  <div class="cart-welcome-massege">Your cart is empty. Click the products you want to buy.
+                  </div>
+                </div>
+
+            </div>
+            <div class="total-amount-section">
+                <div>
+                    <span>Discount : </span>
+                    <span>BDT 0.00</span>
+                </div>
+                <div>
+                    <span>Sub Total : </span>
+                    <span class="total-cost">BDT 0.00</span>
+                </div>
+                <div>
+                    <span>Tax (0%) :  </span>
+                    <span>BDT 0.00</span>
+                </div>
+                <div>
+                    <span>Total Amount: </span>
+                    <span class="total-cost">BDT 0.00</span>
+                </div>
+                <button>
+                    <span>Pay</span>
+                    <span class="total-cost">BDT 0.00</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="productsArray.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

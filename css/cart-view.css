@@ -1,0 +1,140 @@
+.cart-view-container {
+  flex: 4;
+  max-height: calc(100vh - 1.5rem);
+  min-height: calc(100vh - 1.5rem);
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border: var(--border-subtle);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.add-customer {
+  font-size: 14px;
+  font-weight: 600;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border-subtle);
+  color: var(--text-color-secondary);
+}
+
+i {
+  padding: 0.25rem;
+  color: var(--text-color-secondary);
+}
+
+.cart-list-container {
+  flex: 8;
+  margin: 0.5rem;
+  /* height: 60vh; */
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-bottom: var(--border-subtle);
+}
+
+.cart-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.25rem;
+}
+
+#single-item {
+  padding-top: 0.25rem;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#single-item > img {
+  width: 48px;
+  height: 48px;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+#product-count {
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  background-color: #3aa096;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  position: absolute;
+  top: 2px;
+  left: 49px;
+  z-index: 99;
+}
+
+#close {
+  color: #666;
+  cursor: pointer;
+}
+
+#close:hover {
+  color: #333;
+}
+
+.cart-welcome-massege {
+  padding: 1vw;
+}
+
+.total-amount-section {
+  flex: 4;
+  margin: 0.5rem;
+  /* min-height: 25vh; */
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.total-amount-section > div,
+.total-amount-section > button {
+  box-sizing: content-box;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-amount-section > button {
+  border: 1px solid var(--text-color-secondary);
+  border-radius: 4px;
+  background-color: var(--text-color-secondary);
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 1px gray;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1rem;
+}
+
+.total-amount-section > button:hover {
+  background-color: #511ad1;
+}
+
+.total-amount-section > button:active {
+  background-color: #3008b0;
+}
+
+.total-amount-section > button > span {
+  color: #fff;
+  font-size: clamp(12px, 1.5vw, 20px);
+  padding: 0 1rem 0 1rem;
+}
+
+@media only screen and (max-width: 796px) {
+  #single-item {
+    display: flex;
+    flex-direction: column;
+  }
+}

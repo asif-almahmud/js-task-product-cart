@@ -1,0 +1,45 @@
+:root {
+  --text-color-primary: #333;
+  --text-color-secondary: #622be2;
+
+  --border-subtle: 1px solid #ddd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  color: #233;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #eee;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8f8f8f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(58, 58, 58);
+}
+
+.main-container {
+  width: 100vw;
+  display: flex;
+  padding: 0.5rem;
+}

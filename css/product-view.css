@@ -1,0 +1,94 @@
+.product-view-container {
+  flex: 8;
+  display: flex;
+  min-height: calc(100vh - 4rem);
+  flex-direction: column;
+  color: var(--text-color-primary);
+  position: relative;
+}
+
+.search-container {
+  height: 4rem;
+  padding: 0.25rem;
+}
+.search-input-field {
+  height: 3rem;
+  width: 100%;
+  padding: 0.5rem;
+  background: #fff;
+  border: var(--border-subtle);
+  border-radius: 4px;
+}
+
+.search-input-field:focus {
+  outline: none;
+  border-color: #5c5c5c;
+}
+
+.products-container {
+  padding: 0.25rem;
+  border-top: var(--border-subtle);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+  max-height: calc(100vh - 10rem);
+}
+
+#card {
+  width: 7rem;
+  border: var(--border-subtle);
+  border-radius: 3px;
+  margin: 0.5rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 2px #a3a3a3;
+  cursor: pointer;
+}
+
+#card > img {
+  width: clamp(5rem, 5vw, 7rem);
+  height: clamp(5rem, 5vw, 7rem);
+  margin: 0.5rem;
+  border-radius: 5px;
+  background-color: red;
+  cursor: pointer;
+}
+
+#card > span {
+  margin: 0.25rem;
+  text-align: center;
+}
+
+.options-container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  border-top: var(--border-subtle);
+  background-color: #eeeeee;
+}
+
+.options-container > div > button {
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.options-container > div > button:hover {
+  border: 1px solid #888;
+}
+
+.options-container > div > button:active {
+  border: 1px solid #555;
+}
